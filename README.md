@@ -1,3 +1,3 @@
 # blog
 
-making with VueJS
+making blog with VueJS + Vuetify + Vite
