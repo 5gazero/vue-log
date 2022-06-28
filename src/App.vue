@@ -1,23 +1,23 @@
 <template>
-  <v-app>
-    <v-main>
-      <HelloWorld/>
-    </v-main>
-  </v-app>
+  <div>
+    <h2>Vue-log</h2>
+    <List :contents="posts" />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import List from "./components/List.vue";
+import posts from "./assets/posts.js";
 
 export default {
-  name: 'App',
+  name: "App",
 
   components: {
-    HelloWorld,
+    List,
   },
 
-  data: () => ({
-    //
-  }),
-}
+  data() {
+    return { posts: posts };
+  },
+};
 </script>
